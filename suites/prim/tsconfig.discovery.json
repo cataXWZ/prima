@@ -1,0 +1,62 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "types": [
+      "node"
+    ],
+    "skipLibCheck": true,
+    "paths": {
+      "@pages/*": [
+        "./pages/*.ts"
+      ],
+      "@fixtures/*": [
+        "./fixtures/*.ts"
+      ],
+      "@data/*": [
+        "./data/*.ts"
+      ],
+      "@scripts/*": [
+        "./scripts/*.ts"
+      ],
+      "@components/*": [
+        "./components/*.ts"
+      ],
+      "@flows/*": [
+        "./flows/*.ts"
+      ],
+      "@config/*": [
+        "./config/*.ts"
+      ],
+      "@support/*": [
+        "./support/*.ts"
+      ]
+    },
+    "allowJs": false
+  },
+  "include": [
+    "playwright.discovery.config.ts",
+    "support/discovery/**/*.ts",
+    "tests/journeys/**/*.ts",
+    "tests/elements/**/*.ts",
+    "tests/pages/**/*.ts",
+    "tests/api/**/*.ts",
+    "tests/ui-api/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "reports",
+    "test-results",
+    "playwright-report",
+    ".aia/runs",
+    ".studio/provenance"
+  ]
+}

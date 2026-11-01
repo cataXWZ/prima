@@ -1,0 +1,22 @@
+{
+  "name": "prim-tests",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "scripts": {
+    "test": "node --import tsx support/discovery/runner.ts all",
+    "test:report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "install:browsers": "playwright install",
+    "check": "node --import tsx support/discovery/runner.ts check"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "22.19.18",
+    "typescript": "5.9.3",
+    "tsx": "4.23.15"
+  }
+}
